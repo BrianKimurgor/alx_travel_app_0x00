@@ -3,6 +3,10 @@ from .models import Listing, Booking
 
 
 class ListingSerializer(serializers.ModelSerializer):
+    """
+    Serializer for the Listing model. This serializer automatically generates fields
+    based on the Listing model and includes all fields by default.
+    """
     class Meta:
         model = Listing
         fields = '__all__'
